@@ -46,7 +46,7 @@ You can click the one button and see the result as a progress. The data is comin
 -Code Samples-
 The biggest algorithm  for me was holding languages and the replay count at the same time (Some junior problems :) ).
 
-[Alt text](25CodeSample.PNG)
+![25CodeSample](https://user-images.githubusercontent.com/45101301/208662064-51c6f758-f13c-4925-9e97-db5799e1e778.PNG)
 
  countriesData.forEach(country => {
         country.languages.forEach(language =>{

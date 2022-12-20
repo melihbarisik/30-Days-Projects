@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>30DaysOfJavaScript:30 </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="titles">
+            <h1>World Countries Data</h1>
+            <h2 id="allCountriesCount">Curently we have 250 countries</h2>
+            <h3 id="searchResultCount"><span id="countSpan"></span> countries satisfied to search criteria</h3>
+        </div>
+
+        <div class="searchAndButtons">
+            <div class="search">
+                <input type="text" id="filter" placeholder="Search countries by name, city and languages">
+            </div>
+            <div class="buttons">
+                <button class="button" id="nameButton">Name 
+                    <i id="upArrowForName"   class="fa-solid fa-up-long up"></i> 
+                    <i id="downArrowForName" class="fa-solid fa-down-long"></i>
+                </button> 
+                <button class="button" id="capitalButton">Capital
+                    <i id="upArrowForCapital"   class="fa-solid fa-up-long up"></i> 
+                    <i id="downArrowForCapital" class="fa-solid fa-down-long"></i>
+                </button> 
+                <button class="button" id="populationButton">Population
+                    <i id="upArrowForPopulation"   class="fa-solid fa-up-long up"></i> 
+                    <i id="downArrowForPopulation" class="fa-solid fa-down-long"></i>
+                </button>
+                <a href="#chartContainer">
+                    <button id="chartButton" class="chartButton"><i class="fa-solid fa-chart-column"></i>  </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="countriesList" id="countriesList">
+        
+    </div>
+
+    <div class="chartContainer" id='chartContainer'>
+       <div class="chartButtonDiv">
+            <button id="chartPopulationButton" class="population button">Population</button>
+            <button id="languagePopulationButton" class="language button">Languages</button>
+       </div>
+       <div class="header" id="populationLanguagesSpan"></div>        
+       </div>
+
+       <div id="chart" class="chart">
+      
+    </div>
+
+    <div class="upArrow" id="upArrow">
+        <a href="#header">
+            <button id="chartButton" class="upHrefButton"><i class="fa-solid fa-up-long"></i></button>
+        </a>
+    </div>
+
+
+
+    <script src="./data/countries_data.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

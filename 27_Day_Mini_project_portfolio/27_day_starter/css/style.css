@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+
+:root {
+    --main-color:  #EDDFDE;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: 0.1s ease; /* geçişler */
+}
+
+/* base html codes */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+
+body .container {
+    display: flex;
+    margin: 4rem 10rem;
+    flex-direction: column;
+    text-align: start;
+    align-items: flex-start;
+    row-gap: 5rem;
+}
+
+/* explanation*/
+
+.explanation {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 100%;
+}
+
+.explanation p>span {
+    font-weight: bold;
+}
+
+.explanation h1 {
+    font-size: 7rem;
+    letter-spacing: 1.5rem;
+    font-family: "Lato";
+}
+
+.explanation .slide-right {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--main-color);
+}
+
+.explanation .slide-right p{
+    font-size: 3rem;
+}
+
+
+.explanation h2 {
+    font-size: 3rem;
+    height: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.startSlide {
+    animation:  slide-right 5s forwards;
+    transform:translateX(-20%);
+}
+
+.stopSlide {
+    animation: none;
+    transform : none;
+}
+
+@keyframes slide-right {
+    to {
+      transform:translateX(0);
+    }
+  }
+
+.explanation p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+    font-family: "Lato";
+}
+
+/* Squares */
+.squares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    row-gap: 10rem;
+    width: 100%;
+}
+
+.squares h3 {
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-width: 30rem;
+    min-height: 30rem;
+    border: 10px solid var(--main-color);
+    font-family: "Lato";
+    font-weight: 300;
+    
+}
+
+.squares h3:hover {
+    transition: font-size 3s;
+    font-size: 2.2rem;
+    background-color: var(--main-color);
+}
+
+/* technologies */
+.technologies {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.technologies p{
+    font-size: 2rem;
+    font-family: "Lato";
+}
+
+.technologies span{
+    font-family: "Lato";
+    opacity : 0.5;   
+    font-weight: 900;
+    letter-spacing: 0.8rem;
+}
+
+
+.techSpan {
+   transition: font-size 2s;
+   font-size: 6rem;
+}

@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: 0.2s ease; /* geçişler */
+}
+
+/* base html codes */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url(../images/galaxy.gif);
+    font-family: 'Alexandria', sans-serif;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    margin-top: 2rem;
+    color: #fff;
+}
+
+header .search {
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+    gap: 1rem;
+}
+
+header .search input {
+   width: 22rem;
+   height: 3.5rem;
+   padding-left: 0.5rem;
+   height: 4rem;
+}
+
+
+header .search select {
+    width: 15rem;
+    border: 3px solid #fff;
+    border-radius: 0.8rem;
+}
+
+header .search .search-button {
+    background-color: #6D6A69;
+    color: #fff;
+    width: 12rem;
+    height: 4rem;
+    border: 3px solid #000;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+main .main-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    direction: row;
+    background-color: rgba(109, 106, 105, 0.3);
+    margin: 0 20rem;
+}
+
+main .main-div .image-div {
+    max-width: 40rem;
+}
+
+main .main-div .image-div img{
+   width: 100%;
+   object-fit: cover;
+   margin: 5rem 0;
+}
+
+
+main .main-div .image .planet-image{
+    height: 7rem;
+}
+
+
+main .main-div .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(58, 58, 58, 0.5);
+    margin-left: 5rem;
+    margin: 5rem 0;
+    width: 60rem;
+    height: 8rem;
+    display: none;
+}
+
+main .main-div .description .description-text {
+    font-size: 2rem;
+    color: rgb(241, 226, 226);
+}
+
+
+
+main .main-div .description .result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(76, 76, 76, 0.4);
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+ 
+}
+
+main .main-div .description .result h3 {
+    font-size: 2rem;
+    /* font-weight: 900; */
+}
+

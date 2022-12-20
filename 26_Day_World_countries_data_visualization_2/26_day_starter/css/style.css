@@ -1,0 +1,183 @@
+:root {
+    --main-color: #fff;
+    --button-color: #5821af;
+    --button-hover-color: #360f74;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: 0.2s ease; /* geçişler */
+}
+
+/* base html codes */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+
+/* header starter */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    height: 70vh;
+}
+
+.header .img-bg {
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  top: -10;
+  width: 100%;
+  height: auto;
+}
+
+.header .sizeDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15rem;
+    position: relative;
+}
+
+.header .texts {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-bottom: 2rem;
+}
+
+
+.header .sizeDiv .texts .headerText {
+    font-size: 5rem;
+    word-spacing: 1.5rem;
+    letter-spacing: 1rem;
+    color: var(--main-color);
+}
+
+.header .sizeDiv .texts .countryNumber {
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 2.2rem;
+}
+
+.header .sizeDiv .texts .numberAndKeyword {
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 1.5rem;
+}
+
+/* header ends */
+
+/* buttons start*/
+
+.header .sizeDiv .buttons {
+    margin-bottom: 2rem;
+}
+
+.buttons .commonButtonAttiribute {
+    font-size: 1.5rem;
+    background-color: var(--button-color);
+    color: var(--main-color);
+    padding: 1.5rem;
+    border: 0;
+}
+
+.buttons .commonButtonAttiribute:hover {
+    font-size: 1.6rem;
+    background-color: var(--button-hover-color);
+}
+
+.clickedButton {
+    background-color: var(--button-hover-color) !important;
+}
+
+
+/* buttons end*/
+
+/* search start*/
+
+.header .sizeDiv input {
+    width: 50rem;
+    height: 3.5rem;
+    padding: 1rem;
+    border: 0;
+    border-radius: 2.5rem;
+    outline: none;
+}
+
+.header .sizeDiv .search {
+    display: flex;
+    align-items: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+
+.header .sizeDiv .searchButton {
+    background-color: transparent;
+    border: 0;
+}
+
+.header .sizeDiv .searchButton i {
+    font-size: 2rem;
+    margin-left: 1rem;
+    color: var(--main-color);
+}
+
+/* search end*/
+
+/* countries div start */
+
+.coverCountries{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.countries {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    row-gap: 1rem;
+    margin-top: 5rem;
+    width: 85%;
+}
+
+.countryDiv {
+    width: 18rem;
+    height: 18rem;
+    background: url(../images/map_image.jpg);
+    background-size: cover; /* cover ile 100vh doldurdu*/
+    background-position: center;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid transparent;
+    filter: brightness(80%)
+}
+
+
+.countrySpan {
+    color: var(--button-color);
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 5px 10px;
+    font-size: 2.2rem;
+    margin-top: 40%;
+}
+
+
+
+/* countries div end */

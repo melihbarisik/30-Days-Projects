@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>30DaysOfJavaScript:30 </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header"><span>Validating Web Form</span></div>
+    <div class="form">
+		<form id="userForm" class="userForm">
+           <div class="nameDiv">
+            <h3>First Name</h3>
+			<div class="inputDiv">
+                <input  type="text" name="fname"   id="fname"   placeholder="First Name">
+                <span id="firstNameError" class="errorSpan"></span>
+            </div>
+           </div>
+          <div class="lastNameDiv">
+            <h3>Last Name</h3>
+			<div class="inputDiv">
+                <input  type="text"    id="lname"   placeholder="Last Name">
+                <span id="lastNameError" class="errorSpan"></span>
+            </div>
+          </div>
+            <div class="emailDiv">
+                <h3>Email</h3>
+            <div class="inputDiv">
+                <input  type="text"    id="email" placeholder="Email">
+                <span id="emailError" class="errorSpan"></span>
+            </div>
+            </div>
+            <div class="passwordDiv">
+                <h3>Password</h3>
+			<div class="inputDiv">
+                <input  type="password"  id="password"   placeholder="Password">
+                <span id="passwordError" class="errorSpan"></span>
+            </div>
+            </div>
+            <div class="telephoneDiv">
+                <h3>Telephone</h3>
+                <div class="inputDiv">
+                    <input  type="text"  id="telephone"   placeholder="Telephone">
+                    <span id="numberError" class="errorSpan"></span>
+                </div>
+            </div>
+           <div class="bioDiv">
+            <h3>Your Bio</h3>
+            <div class="inputDiv">
+                <input  type="text"  id="bio"   placeholder="Your Bio">
+                <span id="bioError" class="errorSpan"></span>
+            </div>
+           </div>
+			<div class="formButton">
+                <button type="submit" class="submitBtn"  id="submit">Submit</button>
+            </div>
+		</form>
+	</div>
+
+
+
+    <script src="./data/countries_data.js"></script>
+    <script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

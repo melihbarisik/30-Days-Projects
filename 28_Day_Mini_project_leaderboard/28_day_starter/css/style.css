@@ -1,0 +1,131 @@
+
+:root {
+    --main-color:  #E5C9C5;
+    --button-hover-color: #BDD09A;
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: 0.1s ease; /* geçişler */
+}
+
+/* base html codes */
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+/* Form starts*/
+.form {
+    display: flex;
+    justify-content: center;
+}
+
+.form input {
+    width: 15rem;
+    height: 3.5rem;
+    border: 1px solid var(--main-color);
+    line-height: 10rem;
+    text-indent: 1rem;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+.form button {
+    color: #fff;
+    width: 15rem;
+    height: 3.5rem;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+.error {
+    display: flex;
+    justify-content: center;
+    color: red;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+/* Form end*/
+
+/* All Players start*/
+
+.allPlayers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    display: flex;
+    justify-content: start;
+    background-color: var(--main-color);
+    width: 76rem;
+    height: 6rem;
+    align-items: center;
+}
+
+ .playerNameDateContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 4rem 0 1rem;
+    row-gap: 0.5rem;
+    min-width: 16rem;
+   
+ }
+ 
+ .dateInformation {
+   color: #888888;
+   font-size: 1.2rem;
+ }
+
+.playerInformation {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+.playerButtonContainer {
+    display: flex;
+    column-gap: 1rem;
+    margin-left: 15rem;
+    margin-right: 5rem;
+}
+
+.playerButtons {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid transparent;
+    font-size: 1.5rem;
+}
+
+.playerButtons:hover {
+    background-color: var(--button-hover-color);
+}
+
+.countryContainer {
+    min-width: 15rem;
+}
+
+.scoreContainer {
+    margin-left: 2rem;
+    min-width: 5rem;
+}
+
+/* All Players end*/

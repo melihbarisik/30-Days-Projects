@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>30DaysOfJavaScript:11 Day </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="header">
+		<img src="./images/globe-2.jpg" alt="" class="img-bg">
+		<div class="sizeDiv">
+			<div class="texts">
+				<h1 class="headerText">WORLD COUNTRIES LIST</h1>
+				<h2 class="countryNumber">Total Numbers of Countries 193</h2>
+				<h3 id="numberAndKeyword" class="numberAndKeyword"></h3>
+			</div>
+			<div class="buttons">
+				<button class="commonButtonAttiribute" id="startingWord">Starting Word</button>
+				<button class="commonButtonAttiribute" id="searchWithAnyWord">Search with Any Word</button>
+				<button class="commonButtonAttiribute" id="sortingButton"><i class="fa-solid fa-arrow-up-z-a"></i></button>
+			</div>
+			<div class="search">
+				<input type="text" id="input" placeholder="Search Country">
+				<button class="searchButton" id="searchButton"> <i class="fa fa-search" aria-hidden="true"></i> </button>
+			</div>
+		</div>
+	</div>
+
+	<div class="coverCountries">
+		<div class="countries" id="countries"></div>
+	</div>
+		
+	</div>
+
+	<script src="./data/countries.js"></script>
+	<script src="./scripts/main.js"></script>
+
+</body>
+
+</html>

@@ -44,4 +44,10 @@ In the beginning we have a form with four inputs. You can not skip any input in 
 -Code Sample-
 While coding this challange I didn't determine big problem however I learned a new and usefull <I think :)> method to clear the screen. 
 
-![29CodeSample](https://user-images.githubusercontent.com/45101301/208662718-1512c72e-e4b2-4ba7-902d-c5ab03fb1635.PNG)
+```
+function clearScreen() {
+    while(allPlayersDiv.firstChild) {
+        allPlayersDiv.removeChild(allPlayersDiv.lastChild);
+    }
+ }
+```

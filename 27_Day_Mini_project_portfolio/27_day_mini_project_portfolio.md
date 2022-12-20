@@ -44,20 +44,8 @@ Two different object arrays are displaying on the screen with timing. I have use
 -Code Sample-
 I have nothing to say. :D
 
-function startSlideShow() {
-    setInterval(function () {
-        slideHeader.setAttribute('class', 'startSlide');
-        if (counter === (slideInfo.length)) {
-            counter = 0;
-        }
-        slideHeader.textContent = slideInfo[counter].description;
-        slideIcon.textContent = slideInfo[counter].icon;
-        counter++;
-        setTimeout(() => {
-            slideHeader.classList.remove('startSlide');
-        },4000)
-    },5000)
-}
-
+![Ekran Alıntısı](https://user-images.githubusercontent.com/45101301/208662593-cd1be017-25ef-48e4-9300-58648f286c06.PNG)
+ 
+ 
 I have used SetInterval and setTimeout methods. In brief code repeats itself every 5min and slide waiting 4 minutes to displaying. In this solution you can see your object array's items sliding in the screen one by one
 

@@ -45,6 +45,18 @@ In the begging there are 3 buttons and one input. You can click one button and c
 -Code Sample-
 The most exciting part for me was searching by starting word.
 
-![Ekran Alıntısı](https://user-images.githubusercontent.com/45101301/208662323-6a708bfa-921b-4612-bbda-99c981066cfc.PNG)
+```
+function searchViaStartingWord() {
+   searchedCountriesArray = [];
+   let sliceCountry = "";
+   countriesArray.forEach(country =>{
+      sliceCountry = country.slice(0, input.value.length);
+      if(sliceCountry.toLowerCase() === input.value.toLowerCase()) {
+         searchedCountriesArray.push(country.toUpperCase());
+      }
+   })
+   displayCountries();
+}
+```
 
 In this algorithm I had to slice countries name as long as the search length. When I got the important part of the name I converted them to lower case to prevent mistakes of different letters. End of the process I push result to the array.

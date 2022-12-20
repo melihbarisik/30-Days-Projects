@@ -6,11 +6,12 @@ If you are filling one are you can see red border or if you didn't fill the inpu
 
 -Code Sample-
 Biggest challanges of the project are regex!
-
-const validatePhoneNumber = (phoneNumber) => {
-    return /[0-9]{3}-[0-9]{3}-[0-9]{4}/.test(String(phoneNumber));
+```
+const validatePhoneNumber = (phoneNumber) => 
+{ 
+    return /[0-9]{3}-[0-9]{3}-[0-9]{4}/.test(String(phoneNumber)); 
 }
-
+```
 You can see simple example validatePhoneNumber(). This function will check if you fill the input correctly every time you click the submit button.
 
     if (!validatePhoneNumber(phoneNumberInput.value)) {

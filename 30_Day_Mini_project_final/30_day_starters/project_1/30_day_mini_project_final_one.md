@@ -3,23 +3,27 @@ While clicking the chart emoji you can see population or languages process on th
 
 -Code Sample-
 Every part of this project was unique for me. There are some examples.
+ 
+```
+noRepeatArray = [...new Set(filteredArray.map(JSON.stringify))].map(JSON.parse);
 
- noRepeatArray = [...new Set(filteredArray.map(JSON.stringify))].map(JSON.parse);
+```
 
  Because I had three different filter I push all the result in the one object array (filteredArray). FilteredArray has everything what I need but with repeating. So as I had learned and used before the solution is Set(). After finished filtering I cleaned the repeating objects with this code part.
 
+```
  function sortByName() {
   nameToggle = !nameToggle;
   switchArrowForName(upArrowForName, downArrowForName, 'inline', 'none', nameToggle);
   noRepeatArray.sort(function (a, b) {
     if (nameToggle) {
-   
     return a.name > b.name ? 1 : -1
    } else {
     return a.name > b.name ? -1 : 1
    }
   })
 }
+```
 
 To sort and change the icon way I coded that part. More than classic JS filtering by the help of nameToggle I controlled my icon arrow direction (up or down)
 

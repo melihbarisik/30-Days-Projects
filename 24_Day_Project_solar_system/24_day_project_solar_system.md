@@ -39,6 +39,6 @@
 
 First project of 30 Days of Javascript is a solar system project. This project calculate a weight of an object in a certain planet. 
 
-#About Project
+About Project 
 There is one input which you can only give number values. If you don't give any value to the input, you will face to face "Mass is required" error. After giving number value if you don't choos the planet you also will face to face with "You did not choose a planet yet" error.
 After you follow the steps correctly to calcualte weight you will see the picture of planet and provision of your value.

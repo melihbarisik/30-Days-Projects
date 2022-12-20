@@ -50,10 +50,5 @@ The biggest algorithm  for me was holding languages and the replay count at the 
 
 In first part of that code I used forEach to reach every country in the file however some countries have more than one languages in the languages array (to see the data data > countries_data). Whereas I used another forEach to reach every languages in that file. In the end I have languages array with repeating data. One thing I have learned from previous lessons is Set().
 Under favour of set I cleared repeated languages easily.
-
-  languageSet.forEach(language => {
-   languageCount = languages.filter(lang => lang === language);
-   languageWCounts.push({lang: language, count: languageCount.length});
-   })
   
 Second part of the code I used forEach in the langugaeSet. Inside of my forEach I filtered old and repating languages array to determine which language repeats how many times. Now I am able to create object array and hold the language and value at the same time.
